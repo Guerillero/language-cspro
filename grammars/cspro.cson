@@ -29,8 +29,18 @@
   }
   # Most of the standard control words `i` might be wrong here
   {
-    'match': '\\b(?i)(end|if|else|endif|do|enddo|exit|for|forcase|endfor|next|universe|while|break)\\b'
+    'match': '\\b(?i)(end|exit|next|universe|break|skip|reenter|enter|advance)\\b'
     'name': 'keyword.control.cspro'
+  }
+  #if statments
+  {
+    'match': '\\b(?i)(if|else|then|endif)\\b'
+    'name': 'keyword.control.if.cspro'
+  }
+  #Loops
+  {
+    'match': '\\b(?i)(for|forcase|endfor|do|enddo|while)\\b'
+    'name': 'keyword.control.loop.cspro'
   }
   # Name Proc
   {
