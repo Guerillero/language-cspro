@@ -59,7 +59,7 @@
   }
   #Relation
   {
-    'match': '\\b(?i)(relation|to)\\b'
+    'match': '\\b(?i)(relation|to|parallel|where|linked by)\\b'
     'name': 'keyword.control.relation.cspro'
   }
   #Alpha
