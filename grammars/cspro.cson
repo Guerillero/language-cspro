@@ -13,20 +13,33 @@
     'match': '\{.*\}'
     'name': 'comment.short.cspro'
   }
-  # Block Comment. Has an error need to dig more
+  # Block Comment. start with {{ and end with }}
   {
-    'begin': '\{\{'
-    'end': '\}\}'
-    'contentName': 'comment.block.cspro'
+
   }
   # Single quote strings
   {
-    'match': '\'.*\''
+    'match': '\'[^\']*\''
     'name': 'string.single.cspro'
   }
   # Double quote strings
   {
-    'match': '\".*\"'
+    'match': '\"[^\"]*\"'
     'name': 'string.double.cspro'
+  }
+  # Most of the standard control words `i` might be wrong here
+  {
+    'match': '\\b(?i)(end|if|else|endif|do|enddo|exit|for|forcase|endfor|next|universe|while|break)\\b'
+    'name': 'keyword.control.cspro'
+  }
+  # Name Proc
+  {
+    'match': '\\b(?i)proc .*\\b'
+    'name': 'keyword.procedure.name.cspro'
+  }
+  # proc control words
+  {
+    'match': '\\b(?i)(preproc|postproc)\\b'
+    'name': 'keyword.procedure.control.cspro'
   }
 ]
