@@ -39,7 +39,7 @@
   }
   #Loops
   {
-    'match': '\\b(?i)(for|forcase|endfor|do|enddo|while)\\b'
+    'match': '\\b(?i)(for|forcase|endfor|do|enddo|while|set)\\b'
     'name': 'keyword.control.loop.cspro'
   }
   # Name Proc
@@ -52,4 +52,16 @@
     'match': '\\b(?i)(preproc|postproc)\\b'
     'name': 'keyword.procedure.control.cspro'
   }
+  # native data types
+  {
+    'match': '\\b(?i)(array|string|numeric|config|file)\\b'
+    'name': 'keyword.type.standard.cspro'
+  }
+  #Relation
+  {
+    'match': '\\b(?i)(relation|to)\\b'
+    'name': 'keyword.control.relation.cspro'
+  }
+  #Alpha
+  #function
 ]
