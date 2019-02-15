@@ -1,0 +1,17 @@
+{
+  "name": "language-CSPro",
+  "version": "0.0.0",
+  "description": "CSPro code support in Atom",
+  "engines": {
+    "atom": "*"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Guerillero/language-cspro.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Guerillero/language-cspro/issues"
+  },
+  "license": "MIT"
+}

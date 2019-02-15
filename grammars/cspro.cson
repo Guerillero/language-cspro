@@ -1,0 +1,32 @@
+'scopeName': 'source.cspro'
+'name': 'CSPro'
+'fileTypes': ['app', 'ent', 'pff', 'fmf', 'mgf', 'qsf']
+
+'patterns': [
+  # Single Line Comment
+  {
+    'match': '\/\/.*$'
+    'name': 'comment.line.cspro'
+  }
+  # Short Comment on single line
+  {
+    'match': '\{.*\}'
+    'name': 'comment.short.cspro'
+  }
+  # Block Comment. Has an error need to dig more
+  {
+    'begin': '\{\{'
+    'end': '\}\}'
+    'contentName': 'comment.block.cspro'
+  }
+  # Single quote strings
+  {
+    'match': '\'.*\''
+    'name': 'string.single.cspro'
+  }
+  # Double quote strings
+  {
+    'match': '\".*\"'
+    'name': 'string.double.cspro'
+  }
+]
