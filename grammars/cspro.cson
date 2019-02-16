@@ -57,19 +57,24 @@
     'match': '\\b(?i)(array|string|numeric|config|file)\\b'
     'name': 'keyword.type.standard.cspro'
   }
-  #Relation
+  # Relation
   {
     'match': '\\b(?i)(relation|to|parallel|where|linked by)\\b'
     'name': 'keyword.control.relation.cspro'
   }
-  #Alpha
+  # Alpha
   {
     'match': '\\b(?i)alpha\\w*\([0-9]*\)\\b'
     'name': 'keyword.type.alpha.cspro'
   }
-  #function
+  # function
   {
     'match': '\\bfunction\\w*[^\(]*\\b'
     'name': 'keyword.control.function.cspro'
+  }
+  # this ($)
+  {
+    'match': '\\b\$\\b'
+    'name': 'keyword.control.this.cspro'
   }
 ]
