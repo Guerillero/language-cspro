@@ -63,5 +63,13 @@
     'name': 'keyword.control.relation.cspro'
   }
   #Alpha
+  {
+    'match': '\\b(?i)alpha\\w*\([0-9]*\)\\b'
+    'name': 'keyword.type.alpha.cspro'
+  }
   #function
+  {
+    'match': '\\bfunction\\w*[^\(]*\\b'
+    'name': 'keyword.control.function.cspro'
+  }
 ]
