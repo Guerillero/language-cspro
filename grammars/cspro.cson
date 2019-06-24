@@ -13,10 +13,6 @@
     'match': '\{.*\}'
     'name': 'comment.short.cspro'
   }
-  # Block Comment. start with {{ and end with }}
-  {
-
-  }
   # Single quote strings
   {
     'match': '\'[^\']*\''
